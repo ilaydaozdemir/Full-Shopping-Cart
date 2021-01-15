@@ -28,7 +28,7 @@ class App extends React.Component {
             ? a.price < b.price
               ? 1
               : -1
-            : a._id > b._id
+            : a._id < b._id
             ? 1
             : -1
         ),
@@ -37,7 +37,7 @@ class App extends React.Component {
   filterProducts = event => {
     console.log(event.target.value);
     if (event.target.value === '') {
-      this.setState({ size: event.target.value, product: data.products });
+      this.setState({ size: event.target.value, products: data.products });
     } else {
       this.setState({
         size: event.target.value,
