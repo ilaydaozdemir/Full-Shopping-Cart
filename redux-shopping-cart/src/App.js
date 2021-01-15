@@ -1,4 +1,5 @@
 import React from 'react';
+import Filter from './component/Filter';
 import Products from './component/Products';
 import data from './data.json';
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
         <main>
           <div className='content'>
             <div className='main'>
+              <Filter count={this.state.products.length} />
               <Products products={this.state.products} />
             </div>
             <div className='sidebar'>Cart Items</div>
