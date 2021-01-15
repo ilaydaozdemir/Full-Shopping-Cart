@@ -11,6 +11,12 @@ class App extends React.Component {
       sort: '',
     };
   }
+  sortProducts(event) {
+    console.log(event.target.value);
+  }
+  filterProducts(event) {
+    console.log(event.target.value);
+  }
   render() {
     return (
       <div className='grid-container'>
@@ -20,7 +26,13 @@ class App extends React.Component {
         <main>
           <div className='content'>
             <div className='main'>
-              <Filter count={this.state.products.length} />
+              <Filter
+                count={this.state.products.length}
+                size={this.state.size}
+                sort={this.state.sort}
+                filterProducts={this.filterProducts}
+                sortProducts={this.sortProducts}
+              />
               <Products products={this.state.products} />
             </div>
             <div className='sidebar'>Cart Items</div>
