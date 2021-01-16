@@ -9,3 +9,5 @@
 ## Step 4: Cart Component
 
 ## Step 5: Checkout Form(Handle Forms)
+
+## Step 6: Add Animations and Modals(React-Reveal)
