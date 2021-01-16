@@ -43,7 +43,7 @@ export default class Cart extends Component {
                 <div>
                   Total:{' '}
                   {formatCurrency(
-                    cartItems.reduce((a, c) => a + (c.price * c.count, 0))
+                    cartItems.reduce((a, c) => a + c.price * c.count, 0)
                   )}
                 </div>
                 <button className='button primary'>Proceed</button>
