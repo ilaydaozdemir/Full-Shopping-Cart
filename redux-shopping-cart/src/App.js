@@ -15,7 +15,9 @@ class App extends React.Component {
       sort: '',
     };
   }
-
+  createOrder = order => {
+    alert('Need to save order for ' + order.name);
+  };
   removeFromCart = product => {
     const cartItems = this.state.cartItems.slice();
     this.setState({ cartItems: cartItems.filter(x => x._id !== product._id) });
@@ -103,6 +105,7 @@ class App extends React.Component {
               <Cart
                 cartItems={this.state.cartItems}
                 removeFromCart={this.removeFromCart}
+                createOrder={this.createOrder}
               />
             </div>
           </div>
