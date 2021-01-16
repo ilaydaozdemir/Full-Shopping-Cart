@@ -11,3 +11,5 @@
 ## Step 5: Checkout Form(Handle Forms)
 
 ## Step 6: Add Animations and Modals(React-Reveal)
+
+## Step 7: Backend API(Node & MongoDB)
