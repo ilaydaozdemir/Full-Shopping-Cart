@@ -54,7 +54,36 @@ export default class Products extends Component {
               <button className='close-modal' onClick={this.closeModal}>
                 x
               </button>
-              <div>Modal</div>
+              <div className='product-details'>
+                <img src={product.image} alt={product.title}></img>
+                <div className='description'>
+                  <p>
+                    <strong>{product.title} </strong>
+                  </p>
+                  <p>{product.description}</p>
+                  <p>
+                    Avaiable Sizes:{' '}
+                    {product.availableSizes.map(x => (
+                      <span>
+                        {' '}
+                        <button className='button'>{x}</button>
+                      </span>
+                    ))}
+                  </p>
+                  <div className='product-price'>
+                    <div>{formatCurrency(product.price)}</div>
+                    <button
+                      className='button primary'
+                      onClick={() => {
+                        this.addToCart(product);
+                        this.closeModal();
+                      }}
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
             </Zoom>
           </Modal>
         )}
