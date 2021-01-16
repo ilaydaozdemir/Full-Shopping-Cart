@@ -10,7 +10,7 @@ export default class Cart extends Component {
           <div className='cart cart-header'>Cart is empty</div>
         ) : (
           <div className='cart cart-header'>
-            You have {cartItems.length} in the cart{''}
+            You have {cartItems.length} in the cart
           </div>
         )}
         <div>
@@ -24,9 +24,11 @@ export default class Cart extends Component {
                   <div>
                     <div>{item.title}</div>
                     <div className='right'>
-                      {formatCurrency(item.price)} x {item.count}
-                      {''}
-                      <button onClick={() => this.props.removeFromCart(item)}>
+                      {formatCurrency(item.price)} x {item.count} {''}
+                      <button
+                        className='button'
+                        onClick={() => this.props.removeFromCart(item)}
+                      >
                         Remove
                       </button>
                     </div>
