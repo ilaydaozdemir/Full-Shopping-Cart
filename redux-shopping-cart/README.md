@@ -15,3 +15,5 @@
 ## Step 7: Backend API(Node & MongoDB)
 
 ## Step 8: Add Redux To Product List(Redux)
+
+## Step 9: Add Redux To Filter Bar
