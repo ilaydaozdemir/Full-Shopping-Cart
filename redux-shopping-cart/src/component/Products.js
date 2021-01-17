@@ -13,6 +13,11 @@ class Products extends Component {
       product: null,
     };
   }
+
+  componentDidMount() {
+    this.props.fetchProducts();
+  }
+
   openModal = product => {
     this.setState({ product });
   };
@@ -93,6 +98,6 @@ class Products extends Component {
     );
   }
 }
-export default connect(state => ({ products: state.products }), {
+export default connect(state => ({ products: state.products.items }), {
   fetchProducts,
 })(Products);
