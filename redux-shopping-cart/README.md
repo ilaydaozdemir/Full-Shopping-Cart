@@ -13,3 +13,5 @@
 ## Step 6: Add Animations and Modals(React-Reveal)
 
 ## Step 7: Backend API(Node & MongoDB)
+
+## Step 8: Add Redux To Product List(Redux)
