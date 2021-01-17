@@ -17,3 +17,5 @@
 ## Step 8: Add Redux To Product List(Redux)
 
 ## Step 9: Add Redux To Filter Bar
+
+## Step 10: Add Redux To Cart
